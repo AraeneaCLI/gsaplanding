@@ -102,10 +102,7 @@
 
 .lftcontainer{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-items: start;
-    align-items: start;
+    justify-items: flex-start;
 }
 
 .rhtcontainer{

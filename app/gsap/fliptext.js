@@ -36,7 +36,6 @@ const FlipText = () => {
         <div className={styles.colcontainer}>
 
         <div className={styles.lftcontainer} ref={contRef}>
-        <div className={styles.rowcontainer}>
           <div className={styles.fontele} ref={aRef}>A</div>
           <div>
             <div className={styles.fontele}>N</div>
@@ -46,7 +45,6 @@ const FlipText = () => {
           <div className={styles.fontele} ref={hzmovRef}>A</div>
           <div className={styles.fontele} ref={hzmovRef}>T</div>
           <div className={styles.fontele}>E</div>
-        </div>
         </div>
 
         <div className={styles.rhtcontainer}>
