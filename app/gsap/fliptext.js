@@ -14,37 +14,34 @@ const FlipText = () => {
     const mRef = useRef();
     const hzRef = useRef();
     const hzmovRef = useRef();
+    const nmorf = useRef();
 
     useEffect(() => {
         gsap.to(aRef.current, { scaleY: 1, duration: 1 , repeat: 1, yoyo: true, ease: 'elastic'});
-        gsap.to(iRef.current, { scaleY: -1, duration: 1 , repeat: -1, yoyo: true, ease: 'power1.inOut'});
+        gsap.to(iRef.current, { y: -1, duration: 1 , repeat: -1, yoyo: true, ease: 'power1.inOut'});
         gsap.to(mRef.current, { x: 15, duration: 1 , repeat: -1, yoyo: true, repeatDelay: 2});
         gsap.to(hzRef.current, { x: 15, duration: 1 , repeat: -1, yoyo: true});
         gsap.fromTo( hzmovRef,{ x: -40}, { x: 40});
-
-        gsap.to(contRef.current, { x:-15 , y: 60 , repeat:8, yoyo: true,
-          stagger: {
-            grid: [7,15],
-            from: "random",
-            axis: "y",
-            ease: "power2.in",
-            amount: 1.5
-          }, ease: "slow(0.7,0.7,false)"});
+        gsap.to(nmorf, {
+          duration: 2,
+          text: "N",
+          ease: "power1.inOut",
+        });
         }, []);
 
     return(
         <div className={styles.colcontainer}>
 
-        <div className={styles.lftcontainer} ref={contRef}>
+        <div className={styles.lftcontainer}>
           <div className={styles.fontele} ref={aRef}>A</div>
           <div>
-            <div className={styles.fontele}>N</div>
+            <div className={styles.fontele} ref={nmorf}>n</div>
           </div>
-          <div className={styles.fontele} ref={hzmovRef}>I</div>
-          <div className={styles.fontele} ref={mRef}>M</div>
-          <div className={styles.fontele} ref={hzmovRef}>A</div>
-          <div className={styles.fontele} ref={hzmovRef}>T</div>
-          <div className={styles.fontele}>E</div>
+          <div className={styles.fontele} ref={iRef}>i</div>
+          <div className={styles.fontele} ref={mRef}>m</div>
+          <div className={styles.fontele} ref={hzmovRef}>a</div>
+          <div className={styles.fontele} ref={hzmovRef}>t</div>
+          <div className={styles.fontele}>e</div>
         </div>
 
         <div className={styles.rhtcontainer}>
