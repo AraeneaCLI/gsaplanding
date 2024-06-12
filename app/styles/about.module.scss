@@ -1,0 +1,68 @@
+.screencont{
+    display: flexbox;
+    height: 100vh;
+    border: 2px white;
+}
+
+.firstscreen{
+    display: flex;
+}
+
+.secondscreen{
+    height: 50vh;
+}
+
+.thirdscreen{
+    height: 50vh;
+}
+
+.fontele{
+    color: white;
+    font-weight: 400;
+    font-size: 200px;
+}
+
+.fbox{
+    display: flex;
+    font-size: 60px;
+    background-color: palevioletred;
+    width: 35%;
+}
+
+.tbox{
+    font-size: 25px;
+    background-color: greenyellow;
+    width: 35%;
+}
+
+.ftbox{
+    display: absolute;
+    font-size: 25px;
+    background-color: purple;
+    width: 35%;
+}
+
+.colcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.sbox{
+    border: 1px whitesmoke;
+    display: flex;
+    width: 50%;
+    font-size: 45px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}

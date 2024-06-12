@@ -1,0 +1,131 @@
+.rowcontainer{
+    display: flex;
+}
+
+.colcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.centercont{
+    justify-items: center;
+    align-items: center;
+}
+
+.fontele{
+    color: white;
+    font-weight: 400;
+    font-size: 200px;
+}
+
+.navbar{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    display: flex;
+}
+
+.Gnavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    display: flex;
+}
+
+:hover.Gnavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+}
+
+.Snavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    display: flex;
+}
+
+:hover.Snavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+}
+
+.Anavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    display: flex;
+}
+
+:hover.Anavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+}
+
+.Pnavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    display: flex;
+}
+
+:hover.Pnavbar{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+}
+
+
+.navelement{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.navfont{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.lftcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: start;
+    align-items: start;
+}
+
+.rhtcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: end;
+    align-items: end;
+}
+
+
+.container{
+    display: flex;
+}
+
+.screencont{
+    height: 100vh;
+}
+
+.maincontainer{
+    display: flex;
+    justify-content: space-between;
+}

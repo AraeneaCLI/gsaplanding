@@ -1,0 +1,62 @@
+.rowcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colcontainer{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.lftcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: start;
+    align-items: start;
+}
+
+.rhtcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: end;
+    align-items: end;
+}
+
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 45px;
+}
+
+.buttoncon{
+    width: 300px;
+    height: 57px;
+    border: 2px solid greenyellow;
+    border-radius: 75px;
+}
+
+.alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.centercont{
+    justify-items: center;
+    align-items: center;
+}
+
+
+.textcont{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
