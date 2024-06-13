@@ -14,8 +14,8 @@ import purple from '@/app/img/purple.svg';
 
 const FlipText = () => {
 
-  const t1 = useRef(null);
-  
+  const t1 = gsap.timeline();
+
     const aRef = useRef();
     const iRef = useRef();
     const contRef = useRef();
@@ -30,14 +30,15 @@ const FlipText = () => {
     const lfttoright = useRef();
     const disappear = useRef();
     const disappear2 = useRef();
+    const disappear3 = useRef();
     const toptobottom = useRef();
     const popout = useRef();
 
     useEffect(() => {
         gsap.to(aRef.current, { y: -45, duration: 2 , repeat: 1, yoyo: true, ease: 'elastic'});
         gsap.to(iRef.current, { scaleY: -1, duration: 2, repeat: -1, repeatDelay: 3, yoyo: true, ease: 'power1.inOut'});
-        gsap.fromTo( mRef.current,{ x: 0}, { x: 100, duration: 1 , repeat: 1, yoyo: true});
-        gsap.to(hzRef.current, { x: -45, duration: 0.5 , repeat: 1, yoyo: true});
+        gsap.fromTo( mRef.current,{ x: 0}, { x: 50, duration: 1 , repeat: 1, yoyo: true});
+        gsap.to(hzRef.current, { y: -150, duration: 1 , repeat: 1, yoyo: true, ease: 'bounce.in'});
         gsap.fromTo( hzmovRef.current,{ x: -10}, { x: 10, duration: 1 , repeat: 1, yoyo: true});
         gsap.to(nmorf, {
           duration: 2,
@@ -50,9 +51,13 @@ const FlipText = () => {
         gsap.to(nintydeg.current, {rotation: 90, duration: 1, repeat: -1, delay:2, repeatDelay:0.5, ease: "power3.in"});
         gsap.fromTo(lfttoright.current, {x:-15, duration:1} , {x:0});
         gsap.fromTo(disappear.current, {opacity:0, duration:0.5}, {opacity:100, delay:3});
-        gsap.to(disappear2.current, {opacity:0, duration:1, repeat:-1});
+        gsap.to(disappear2.current, {opacity:0, duration:2, repeat:1});
+        gsap.to(disappear3.current, {y:-45,duration:1, repeat:1, yoyo:true, ease: 'elastic'});
         gsap.fromTo(toptobottom.current, {y:-100, delay:4} , {y:-0, duration:1})
         gsap.to(popout.current, {duration: 1,scale: 1,opacity: 1,ease: 'back.out(1.7)' });
+        
+        t1.from(disappear3.current, {opacity:0, duration:2, repeat: 1});
+        t1.to(popout.current, {y:-60, duration:1, repeat: 0, ease: 'elastic'}, {y:0});
         }, []);
         
 
@@ -64,11 +69,6 @@ const FlipText = () => {
           <div className={styles.fontele} ref={aRef}>A</div>
 
           <div className={styles.fontele}>
-          <div>
-            <div> 
-              <Image src={purple} alt='' height={150} width={150} ref={disappear2}/>
-            </div>
-          </div>
 
           <div>
           <div className={styles.flair}>

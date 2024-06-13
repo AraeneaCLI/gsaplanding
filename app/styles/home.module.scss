@@ -146,3 +146,24 @@
     display: absolute;
     bottom: 45px;
 }
+
+@media screen and (max-width: 600px){
+    .fontele{
+        display: flex;
+        justify-content: center;
+        color: #fffce1;
+        font-weight: 400;
+        font-size: 120px;
+        font-style: bold;
+        font-family: sans-serif;
+    }
+
+    .colcontainer{
+        display: absolute;
+        margin-top: 100px;
+    }
+
+    .flair{
+        display: none;
+    }
+}
