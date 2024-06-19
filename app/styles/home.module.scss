@@ -5,6 +5,7 @@
 .colcontainer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 40px;
 }
 
@@ -25,7 +26,7 @@
     justify-content: center;
     color: #fffce1;
     font-weight: 400;
-    font-size: 200px;
+    font-size: 250px;
     font-style: bold;
     font-family: sans-serif;
 }
@@ -109,13 +110,13 @@
 }
 
 .lftcontainer{
-    display: absolute;
-    left: 0;
+    display: flex;
+    justify-items: start;
 }
 
 .rhtcontainer{
-    display: absolute;
-    right: 0;
+    display: flex;
+    justify-items: end;
 }
 
 
@@ -134,12 +135,18 @@
 
 .flair{
     position: absolute;
-    top: 0px;
+    top: -25px;
     justify-content: center;
 }
 
+.flair2{
+    position: absolute;
+}
+
+
+
 .fan{
-    display: flex;
+    display: absolute;
 }
 
 .wormcont{
