@@ -1,27 +1,32 @@
-.rowcontainer{
+/* Ensuring overflow is handled properly */
+
+.rowcontainer {
     display: flex;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.colcontainer{
+.colcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 40px;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.centercont{
+.centercont {
     display: flex;
-    justify-items: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.osmcont{
-    display: absolute;
+.osmcont {
+    position: absolute;
     left: 45px;
+    overflow: hidden; /* Prevent overflow */
 }
 
-
-.fontele{
+.fontele {
     display: flex;
     justify-content: center;
     color: #fffce1;
@@ -29,148 +34,105 @@
     font-size: 250px;
     font-style: bold;
     font-family: sans-serif;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.navbar{
+.navbar,
+.Gnavbar,
+.Snavbar,
+.Anavbar,
+.Pnavbar {
     color: #fffce1;
     font-weight: 400;
     font-size: 45px;
     display: flex;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.Gnavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 45px;
-    display: flex;
-}
-
-:hover.Gnavbar{
-    color: white;
-    font-weight: 400;
+.navbar:hover,
+.Gnavbar:hover,
+.Snavbar:hover,
+.Anavbar:hover,
+.Pnavbar:hover {
     font-size: 50px;
-    display: flex;
 }
 
-.Snavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 45px;
-    display: flex;
-}
-
-:hover.Snavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 50px;
-    display: flex;
-}
-
-.Anavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 45px;
-    display: flex;
-}
-
-:hover.Anavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 50px;
-    display: flex;
-}
-
-.Pnavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 45px;
-    display: flex;
-}
-
-:hover.Pnavbar{
-    color: white;
-    font-weight: 400;
-    font-size: 50px;
-    display: flex;
-}
-
-
-.navelement{
+.navelement {
     display: flex;
     flex-direction: row;
     color: white;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.navfont{
+.navfont {
     color: white;
     margin: 20px;
     font-size: 20px;
 }
 
-.lftcontainer{
+.lftcontainer {
     display: flex;
-    justify-items: start;
+    justify-content: flex-start;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.rhtcontainer{
+.rhtcontainer {
     display: flex;
-    justify-items: end;
+    justify-content: flex-end;
+    overflow: hidden; /* Prevent overflow */
 }
 
-
-.container{
+.container {
     display: flex;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.screencont{
+.screencont {
     height: 100vh;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.maincontainer{
+.maincontainer {
     display: flex;
     justify-content: space-between;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.flair{
+.flair,
+.flair2 {
     position: absolute;
     top: -25px;
     justify-content: center;
+    overflow: hidden; /* Prevent overflow */
 }
 
-.flair2{
+.imgele,
+.fan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.wormcont {
     position: absolute;
-}
-
-
-
-.fan{
-    display: absolute;
-}
-
-.wormcont{
-    display: absolute;
     bottom: 45px;
+    overflow: hidden; /* Prevent overflow */
 }
 
-@media screen and (max-width: 600px){
-    .fontele{
-        display: flex;
-        justify-content: center;
-        color: #fffce1;
-        font-weight: 400;
+@media screen and (max-width: 600px) {
+    .fontele {
         font-size: 120px;
-        font-style: bold;
-        font-family: sans-serif;
     }
 
-    .colcontainer{
-        display: absolute;
+    .colcontainer {
+        position: relative;
         margin-top: 100px;
     }
 
-    .flair{
+    .flair {
         display: none;
     }
 }
